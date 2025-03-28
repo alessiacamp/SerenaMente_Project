@@ -1,0 +1,48 @@
+.navbar-collapse {
+  padding: 10px;
+}
+
+.my-card-slider .card-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0;
+}
+
+.btn-primary {
+  width: auto;
+  margin-top: inherit;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-button {
+    margin-bottom: 30px;
+  }
+
+  .modal-title-custom {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
